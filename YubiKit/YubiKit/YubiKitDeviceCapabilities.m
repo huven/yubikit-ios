@@ -100,18 +100,18 @@
 #endif
 
     // Simulator and USB-C type devices
-    if (self.currentUIDevice.ykf_deviceModel == YKFDeviceModelSimulator ||
-        self.currentUIDevice.ykf_deviceModel == YKFDeviceModelIPadPro3 ||
-        self.currentUIDevice.ykf_deviceModel == YKFDeviceModelIPadPro4 ||
-        self.currentUIDevice.ykf_deviceModel == YKFDeviceModelIPadAir4 ||
-        self.currentUIDevice.ykf_deviceModel == YKFDeviceModelIPadPro5 ||
-        self.currentUIDevice.ykf_deviceModel == YKFDeviceModelIPadAir5 ||
-        self.currentUIDevice.ykf_deviceModel == YKFDeviceModelIPadMini6 ||
-        self.currentUIDevice.ykf_deviceModel == YKFDeviceModelIPad10 ||
-        self.currentUIDevice.ykf_deviceModel == YKFDeviceModelIPadPro6 ||
-        self.currentUIDevice.ykf_deviceModel == YKFDeviceModelIPhone15) {
-        return NO;
-    }
+//    if (self.currentUIDevice.ykf_deviceModel == YKFDeviceModelSimulator ||
+//        self.currentUIDevice.ykf_deviceModel == YKFDeviceModelIPadPro3 ||
+//        self.currentUIDevice.ykf_deviceModel == YKFDeviceModelIPadPro4 ||
+//        self.currentUIDevice.ykf_deviceModel == YKFDeviceModelIPadAir4 ||
+//        self.currentUIDevice.ykf_deviceModel == YKFDeviceModelIPadPro5 ||
+//        self.currentUIDevice.ykf_deviceModel == YKFDeviceModelIPadAir5 ||
+//        self.currentUIDevice.ykf_deviceModel == YKFDeviceModelIPadMini6 ||
+//        self.currentUIDevice.ykf_deviceModel == YKFDeviceModelIPad10 ||
+//        self.currentUIDevice.ykf_deviceModel == YKFDeviceModelIPadPro6 ||
+//        self.currentUIDevice.ykf_deviceModel == YKFDeviceModelIPhone15) {
+//        return NO;
+//    }
     if (@available(iOS 10, *)) {
         return [self systemSupportsMFIAccessoryKey];
     }
